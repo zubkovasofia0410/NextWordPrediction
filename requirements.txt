@@ -1,0 +1,7 @@
+numpy
+pandas
+nltk
+scikit-learn
+tensorflow>=2.12
+beautifulsoup4
+pydot

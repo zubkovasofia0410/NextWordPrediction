@@ -1,0 +1,26 @@
+data:
+  path: data
+
+model:
+  embedding_dim: 100
+  lstm_units: 64
+  max_seq_len: 50
+  vocab_size_limit: 6000
+
+training:
+  test_split: 0.2
+  epochs: 20
+  batch_size: 128
+  validation_split: 0.1
+  early_stopping_patience: 3
+  min_context_len: 4
+  max_context_len: 10
+
+
+output:
+  model_path: models/saved_model.keras
+  tokenizer_path: models/tokenizer.pkl
+  maxlen_path: models/max_seq_len.txt
+  test_sentences_path: data/test_sentences.txt
+
+
